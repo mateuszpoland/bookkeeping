@@ -4,7 +4,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "symfony/console": "5.2.*",
@@ -28,12 +28,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Tpay\\": "src/"
+            "Tpay\\": "src/",
+            "CashReporter\\": "src/CurrencyReports",
+            "CasinoWallet\\": "src/CasinoWallet"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tpay\\Tests\\": "tests/"
+            "Tpay\\Tests\\": "tests/",
+            "Tests\\CashReporter\\": "tests/CurrencyReports",
+            "Tests\\CasinoWallet\\": "tests/CasinoWallet"
         }
     },
     "replace": {
